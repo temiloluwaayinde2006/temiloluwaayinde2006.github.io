@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temiloluwa Peter Ayinde | Software Engineering Student</title>
+
+    <style>
+        :root {
+            --primary: #1e3c72;
+            --secondary: #2a5298;
+            --accent: #ffdd57;
+            --card-bg: rgba(255, 255, 255, 0.12);
+            --text-light: #f5f5f5;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "Segoe UI", Arial, sans-serif;
+            background: linear-gradient(135deg, var(--primary), var(--secondary));
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+
+        header {
+            padding: 4rem 1.5rem;
+            text-align: center;
+            background: rgba(0, 0, 0, 0.35);
+        }
+
+        header h1 {
+            font-size: clamp(2.2rem, 5vw, 3.2rem);
+            margin-bottom: 0.7rem;
+        }
+
+        header p {
+            font-size: clamp(1.1rem, 3vw, 1.4rem);
+            opacity: 0.9;
+        }
+
+        main {
+            max-width: 1200px;
+            margin: auto;
+            padding: 2rem 1.5rem;
+        }
+
+        section {
+            margin-bottom: 2.5rem;
+        }
+
+        section h2 {
+            color: var(--accent);
+            margin-bottom: 1rem;
+            font-size: 1.6rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 1.8rem;
+        }
+
+        .card {
+            background: var(--card-bg);
+            padding: 1.6rem;
+            border-radius: 14px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.35);
+        }
+
+        ul {
+            padding-left: 1.2rem;
+        }
+
+        li {
+            margin-bottom: 0.4rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background: rgba(255, 221, 87, 0.2);
+            color: var(--accent);
+            padding: 0.3rem 0.7rem;
+            border-radius: 20px;
+            font-size: 0.85rem;
+            margin: 0.2rem 0.3rem 0 0;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.2rem;
+            background: rgba(0, 0, 0, 0.35);
+            font-size: 0.9rem;
+        }
+
+        /* Mobile tweaks */
+        @media (max-width: 600px) {
+            header {
+                padding: 3rem 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <h1>Temiloluwa Peter Ayinde</h1>
+    <p>Software Engineering Student | Aspiring Software Developer</p>
+</header>
+
+<main>
+
+    <!-- About Section -->
+    <section>
+        <h2>About Me</h2>
+        <div class="card">
+            <p>
+                My name is <strong>Temiloluwa Peter Ayinde</strong>, a dedicated
+                <strong>Software Engineering student</strong> with a strong passion
+                for technology and innovation. I enjoy solving complex problems
+                through code and continuously improving my technical skills.
+            </p>
+            <p>
+                I am particularly interested in building reliable software systems
+                and learning modern technologies that improve efficiency and user
+                experience.
+            </p>
+        </div>
+    </section>
+
+    <!-- Academic Info -->
+    <section>
+        <h2>Academic Information</h2>
+        <div class="grid">
+            <div class="card">
+                <p><strong>Matric Number:</strong> BU23SEN1045</p>
+                <p><strong>Course of Study:</strong> Software Engineering</p>
+                <p><strong>Institution:</strong> Bowen University</p>
+                <p><strong>Level:</strong> Undergraduate</p>
+            </div>
+            <div class="card">
+                <p>
+                    My academic journey has helped me build a strong foundation in
+                    programming concepts, software design principles, and logical
+                    thinking.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section>
+        <h2>Technical Skills</h2>
+        <div class="card">
+            <span class="tag">HTML</span>
+            <span class="tag">CSS</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">Git & GitHub</span>
+            <span class="tag">Problem Solving</span>
+            <span class="tag">Basic Algorithms</span>
+        </div>
+    </section>
+
+    <!-- Interests -->
+    <section>
+        <h2>Interests & Hobbies</h2>
+        <div class="grid">
+            <div class="card">
+                <ul>
+                    <li>Football and sports activities</li>
+                    <li>Programming and coding challenges</li>
+                    <li>Learning new software technologies</li>
+                    <li>Team collaboration and brainstorming</li>
+                </ul>
+            </div>
+            <div class="card">
+                <p>
+                    Football helps me maintain teamwork skills, discipline, and
+                    strategic thinking, which I also apply in my academic and
+                    technical projects.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Career Goals -->
+    <section>
+        <h2>Career Objectives</h2>
+        <div class="card">
+            <p>
+                My career objective is to become a professional software engineer
+                capable of designing and developing scalable applications that solve
+                real-world problems. I aspire to work in environments that encourage
+                growth, innovation, and continuous learning.
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section>
+        <h2>Contact & Online Presence</h2>
+        <div class="card">
+            <p>
+                I am open to collaborations, learning opportunities, and academic
+                discussions.
+            </p>
+            <p><strong>GitHub:</strong> https://github.com/oddemmy</p>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    © 2025 Temiloluwa Peter Ayinde | Personal Website
+</footer>
+
+</body>
+</html>
